@@ -1,0 +1,1062 @@
+* {
+  font-family: arial;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+/*logo*/
+header > div img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+header > div p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+header > div span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: none;
+  color: white;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.web-name {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.web-name-span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ol li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ol li:last-child {
+  margin-right: 0;
+}
+
+nav ol li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ol li a::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: #FF6B0D;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ol li a:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    background-color: rgb(245, 196, 105);
+    align-items: center;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  header > div img {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 4px;
+  }
+}
+
+
+
+
+
+/*hero*/
+.hero-bar  {
+  background: linear-gradient(rgba(243, 168, 30, 0.8), rgba(243, 168, 30, 0.8)),url(Images/Digital\ Printing.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+div > h1 {
+  color: white;
+  font-size: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+
+
+
+
+/*body*/
+.body {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 72px;
+}
+
+.body-text h2 {
+  font-size: 40px;
+}
+
+.body-text p {
+  font-size: 18px;
+}
+
+.body img {
+  width: 400px;
+}
+
+.body-btn {
+  background-color: transparent;
+  border: 2px solid rgb(243, 168, 30);
+  padding: 8px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(243, 168, 30);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.body-btn:hover {
+  background-color: rgb(243, 168, 30);
+  color: white;
+}
+
+
+
+@media (max-width: 600px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    padding: 0px;
+   }
+   
+   .body-text h2 {
+     font-size: 1.3rem;
+     text-align: center;
+   }
+   
+   .body-text p {
+     font-size: 16px;
+     text-align: center;
+     margin: auto;
+     padding: 0px 48px;
+   }
+   
+   .body img {
+     width: 300px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     margin-bottom: 40px;
+   }
+   
+   .body-btn {
+     background-color: transparent;
+     border: 2px solid rgb(243, 168, 30);
+     padding: 8px 16px;
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(243, 168, 30);
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 24px;
+     display: block;
+   }
+
+   .body-text a {
+    text-decoration: none;
+   }
+   
+   .body-btn:hover {
+     background-color: rgb(243, 168, 30);
+     color: white;
+   }
+}
+
+
+
+@media (min-width: 600px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    padding: 0px;
+   }
+   
+   .body-text h2 {
+     font-size: 30px;
+     text-align: center;
+   }
+   
+   .body-text p {
+     font-size: 18px;
+     text-align: center;
+     margin: auto;
+     padding: 0px 48px;
+   }
+   
+   .body img {
+     width: 400px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     margin-bottom: 40px;
+   }
+   
+   .body-btn {
+     background-color: transparent;
+     border: 2px solid rgb(243, 168, 30);
+     padding: 8px 16px;
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(243, 168, 30);
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 24px;
+     display: block;
+   }
+
+   .body-text a {
+    text-decoration: none;
+   }
+   
+   .body-btn:hover {
+     background-color: rgb(243, 168, 30);
+     color: white;
+   }
+}
+
+
+
+@media (min-width: 768px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    padding: 0px;
+   }
+   
+   .body-text h2 {
+     font-size: 30px;
+     text-align: center;
+   }
+   
+   .body-text p {
+     font-size: 18px;
+     text-align: center;
+     margin: auto;
+     padding: 0px 48px;
+   }
+   
+   .body img {
+     width: 400px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     margin-bottom: 40px;
+   }
+   
+   .body-btn {
+     background-color: transparent;
+     border: 2px solid rgb(243, 168, 30);
+     padding: 8px 16px;
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(243, 168, 30);
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 24px;
+     display: block;
+   }
+
+   .body-text a {
+    text-decoration: none;
+   }
+   
+   .body-btn:hover {
+     background-color: rgb(243, 168, 30);
+     color: white;
+   }
+}
+
+
+
+@media (min-width: 992px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 48px;
+   }
+   
+   .body-text h2 {
+     font-size: 35px;
+   }
+   
+   .body-text p {
+     font-size: 18px;
+   }
+   
+   .body img {
+     width: 400px;
+   }
+   
+   .body-btn {
+     background-color: transparent;
+     border: 2px solid rgb(243, 168, 30);
+     padding: 8px 16px;
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(243, 168, 30);
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 24px;
+     display: block;
+   }
+
+   .body-text a {
+    text-decoration: none;
+   }
+   
+   .body-btn:hover {
+     background-color: rgb(243, 168, 30);
+     color: white;
+   }
+}
+
+
+
+@media (min-width: 1200px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 56px;
+   }
+   
+   .body-text h2 {
+     font-size: 35px;
+   }
+   
+   .body-text p {
+     font-size: 18px;
+   }
+   
+   .body img {
+     width: 400px;
+   }
+   
+   .body-btn {
+     background-color: transparent;
+     border: 2px solid rgb(243, 168, 30);
+     padding: 8px 16px;
+     font-size: 15px;
+     text-decoration: none;
+     color: rgb(243, 168, 30);
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 24px;
+     display: block;
+   }
+
+   .body-text a {
+    text-decoration: none;
+   }
+   
+   .body-btn:hover {
+     background-color: rgb(243, 168, 30);
+     color: white;
+   }
+}
+
+
+
+
+
+/*footer*/
+footer {
+  background-color: #805300;
+  height: 200px;
+  padding: 72px 168px 72px 168px;
+  justify-content: space-between;
+  display: flex;
+}
+
+footer > div p {
+  color: rgb(227, 206, 156);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+footer > div a {
+  color: rgb(195, 174, 125);
+  font-family: verdana;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+footer > div a:hover {
+  text-decoration: underline;
+  color: rgb(234, 216, 175);
+}
+
+footer > div address {
+  color: rgb(195, 174, 125);
+  margin-bottom: 16px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.logo-text > img {
+  width: 20px;
+  background-color: rgb(250, 224, 174);
+  margin-right: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.logo-text > span {
+  color: rgb(195, 174, 125);
+  font-family: verdana;
+  transition: all 0.5s;
+}
+
+.logo-text > span:hover {
+  text-decoration: underline;
+  color: rgb(234, 216, 175);
+}
+
+.social-media > a {
+  display: inline-block;
+  background-color: rgb(250, 224, 174);
+  padding: 4px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.social-media > form input {
+  font-size: 15px;
+  padding: 6px 18px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: none;
+}
+
+.social-media > form input:focus {
+  outline: 2px solid orange;
+}
+
+.social-media > form button {
+  background-color: orange;
+  border: none;
+  color: white;
+  margin-top: 4px;
+  font-size: 16px;
+  padding: 6px 28px;
+  transition: all 0.5s;
+}
+
+.social-media > form button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.copyright {
+  color: rgb(195, 174, 125);
+  padding: 0px 0px 32px 168px;
+  background-color: #805300;
+}
+
+
+
+@media (max-width: 600px) {
+  footer {
+    background-color: #805300;
+    height: 600px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 16px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  footer {
+    background-color: #805300;
+    height: 400px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 0px 0px 32px 168px;
+    background-color: #805300;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  footer {
+    background-color: #805300;
+    height: 400px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  footer {
+    background-color: #805300;
+    height: 200px;
+    display: grid;
+    padding: 64px 133px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+    border: none;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  footer {
+    background-color: #805300;
+    height: 200px;
+    display: grid;
+    padding: 64px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
